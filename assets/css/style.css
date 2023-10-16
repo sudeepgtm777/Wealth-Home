@@ -1,15 +1,3 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2023 codewithsadee
- */
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
   /* colors  */
 
@@ -36,72 +24,70 @@
   --neutral-10: #18191a;
   --neutral-5: #0c0c0d;
   --error-100: #ff2134;
+
+  /* Gradient */
+  --gradient: linear-gradient(270deg, #0f4392 0%, #001d3d 100%);
+
+  /* Typography */
+
+  /* Font family */
+  --font-primary: "Montserrat", sans-serif;
+
+  /* Font size */
+  --fs-base: 62.5%;
+  --fs-headline-large: 3.6rem;
+  --fs-headline-medium: 2.8rem;
+  --fs-headline-small: 2.8rem;
+  --fs-title-large: 2.2rem;
+  --fs-title-medium: 2rem;
+  --fs-title-small: 1.8rem;
+  --fs-body-large: 1.6rem;
+  --fs-body-medium: 1.6rem;
+  --fs-label-large: 1.6rem;
+  --fs-label-medium: 1.4rem;
+
+  /* Line height */
+  --lh-headline-large: 44px;
+  --lh-headline-medium: 36px;
+  --lh-headline-small: 36px;
+  --lh-title-large: 28px;
+  --lh-title-medium: 24px;
+  --lh-title-small: 24px;
+  --lh-body-large: 24px;
+  --lh-body-medium: 24px;
+  --lh-label-large: 24px;
+  --lh-label-medium: 20px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semiBold: 600;
+  --weight-regular: 400;
+
+  /* Letter spacing */
+  --traking-n-025: -0.25px;
+  --traking-p-05: 0.5px;
+
+  /* Border Radius */
+  --radius-small: 8px;
+  --radius-medium: 12px;
+  --radius-large: 16px;
+  --radius-extra-large: 32px;
+  --radius-full: 1000px;
+  --radius-circle: 50%;
+
+  /* Shadow */
+  --shadow-1: 0px 2px 4px 0px #00000033;
+  --shadow-2: 0px 5px 10px 0px #0000000d;
+  --shadow-3: 0px 5px 10px 0px #00000033;
+  --shadow-4: 0px 10px 20px 0px #0000001a;
+
+  /* Transition */
+  --transition-easing-quick: cubic-bezier(0, 0.7, 0.3, 1);
+  --transition-duration-quick: 200ms;
+  --transition-duration-smooth: 500ms;
 }
 
-/* Gradient */
---gradient: linear-gradient(270deg, #0f4392 0%, #001d3d 100%);
-
-/* Typography */
-
-/* Font family */
---font-primary: "Montserrat", sans-serif;
-
-/* Font size */
---fs-base: 62.5%;
---fs-headline-large: 3.6rem;
---fs-headline-medium: 2.8rem;
---fs-headline-small: 2.8rem;
---fs-title-large: 2.2rem;
---fs-title-medium: 2rem;
---fs-title-small: 1.8rem;
---fs-body-large: 1.6rem;
---fs-body-medium: 1.6rem;
---fs-label-large: 1.6rem;
---fs-label-medium: 1.4rem;
-
-/* Line height */
---lh-headline-large: 44px;
---lh-headline-medium: 36px;
---lh-headline-small: 36px;
---lh-title-large: 28px;
---lh-title-medium: 24px;
---lh-title-small: 24px;
---lh-body-large: 24px;
---lh-body-medium: 24px;
---lh-label-large: 24px;
---lh-label-medium: 20px;
-
-/* Font weight */
---weight-bold: 700;
---weight-semiBold: 600;
---weight-regular: 400;
-
-/* Letter spacing */
---traking-n-025: -0.25px;
---traking-p-05: 0.5px;
-
-/* Border Radius */
---radius-small: 8px;
---radius-medium: 12px;
---radius-large: 16px;
---radius-extra-large: 32px;
---radius-full: 1000px;
---radius-circle: 50%;
-
-/* Shadow */
---shadow-1: 0px 2px 4px 0px #00000033;
---shadow-2: 0px 5px 10px 0px #0000000d;
---shadow-3: 0px 5px 10px 0px #00000033;
---shadow-4: 0px 10px 20px 0px #0000001a;
-
-/* Transition */
---transition-easing-quick: cubic-bezier(0, 0.7, 0.3, 1);
---transition-duration-quick: 200ms;
---transition-duration-smooth: 500ms;
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
+/* RESET */
 
 *,
 *::before,
@@ -188,46 +174,80 @@ body {
   border-radius: 4px;
 }
 
-/*-----------------------------------*\
-  #TYPOGRAPHY
-\*-----------------------------------*/
+/* TYPOGRAPHY */
 
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
+.headline-large {
+  font-size: var(--fs-headline-large);
+  line-height: var(--lh-headline-large);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--traking-n-025);
+}
 
-/*-----------------------------------*\
-  #COMPONENT
-\*-----------------------------------*/
+.headline-medium {
+  font-size: var(--fs-headline-medium);
+  line-height: var(--lh-headline-medium);
+  font-weight: var(--weight-bold);
+}
 
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
+.headline-small {
+  font-size: var(--fs-headline-small);
+  line-height: var(--lh-headline-small);
+  font-weight: var(--weight-bold);
+}
 
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
+.title-large {
+  font-size: var(--fs-title-large);
+  line-height: var(--lh-title-large);
+  font-weight: var(--weight-semiBold);
+}
 
-/*-----------------------------------*\
-  #PROPERTY
-\*-----------------------------------*/
+.title-medium {
+  font-size: var(--fs-title-medium);
+  line-height: var(--lh-title-medium);
+  font-weight: var(--weight-semiBold);
+}
 
-/*-----------------------------------*\
-  #FEATURE
-\*-----------------------------------*/
+.title-small {
+  font-size: var(--fs-title-small);
+  line-height: var(--lh-title-small);
+  font-weight: var(--weight-semiBold);
+}
 
-/*-----------------------------------*\
-  #VIDEO
-\*-----------------------------------*/
+.body-large {
+  font-size: var(--fs-body-large);
+  line-height: var(--lh-body-large);
+  font-weight: var(--weight-regular);
+}
 
-/*-----------------------------------*\
-  #STORY
-\*-----------------------------------*/
+.body-medium {
+  font-size: var(--fs-body-medium);
+  line-height: var(--lh-body-medium);
+  font-weight: var(--weight-regular);
+}
 
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
+.label-medium {
+  font-size: var(--fs-label-medium);
+  line-height: var(--lh-label-medium);
+  font-weight: var(--weight-semiBold);
+  letter-spacing: var(--traking-p-05);
+}
 
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
+/* REUSED STYLE */
+
+/* COMPONENT */
+
+/* HEADER */
+
+/* HERO */
+
+/* PROPERTY */
+
+/* FEATURE */
+
+/* VIDEO */
+
+/* STORY */
+
+/* FOOTER */
+
+/* MEDIA QUERIES */
