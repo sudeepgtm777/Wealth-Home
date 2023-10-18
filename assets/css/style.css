@@ -313,9 +313,6 @@ body {
 
       /* HEADER */
 
-.navbar{
-  display: none;
-}
 
 .header{
   position: fixed;
@@ -336,6 +333,60 @@ body {
   0% { transform: translate(-100%); }
   100% { transform: translate(0); }
 }
+ 
+.header .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-toggle-btn .close,
+.nav-toggle-btn.active .open{
+  display: none;
+}
+
+.nav-toggle-btn .open,
+.nav-toggle-btn.active .close{
+  display: block;
+}
+
+.navbar{
+  position: absolute;
+  top: 85%;
+  right: 16px;
+  background-color: var(--neutral-100);
+  min-width: 260px;
+  padding: 10px;
+  border-radius: var(--radius-large);
+  box-shadow: var(--shadow-1);
+  visiblity: hideen;
+    /* opacity: 0;
+    scale: 0.4; */
+  transistion: var(--transition-duration-quick) var(--transition-easing-quick);
+  transform-origin: top right;
+  z-index: 4;
+}
+
+.navbar.active{
+  visibility: visible;
+  opacity: 1;
+  scale: 1; 
+}
+
+.navbar,
+.navbar-list,
+.navbar-wrapper{
+  display: grid;
+  gap: 8px;
+}
+
+
+
+
+
+
 
       /* HERO */
 
