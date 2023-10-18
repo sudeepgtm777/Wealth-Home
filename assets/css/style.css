@@ -306,9 +306,10 @@ body {
   color: var(--neutral-10);
   border-radius: var(--radius-small);
   box-shadow: var(--shadow-3);
+  transistion: var(--transition-duration-quick) var(--transition-easing-quick);
 }
 
-.icon-btn:hover { background-color: var(--neutral-90)};
+.icon-btn:where(:hover, :focous-visible) { background-color: var(--neutral-90); }
 
       /* HEADER */
 
