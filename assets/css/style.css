@@ -333,7 +333,7 @@ body {
   0% { transform: translate(-100%); }
   100% { transform: translate(0); }
 }
- 
+
 .header .container {
   position: relative;
   display: flex;
@@ -361,18 +361,18 @@ body {
   padding: 10px;
   border-radius: var(--radius-large);
   box-shadow: var(--shadow-1);
-  visiblity: hideen;
+  visibility: hidden;
   opacity: 0;
-  scale: 0.4; 
+  scale: 0.4;
   transition: var(--transition-duration-quick) var(--transition-easing-quick);
   transform-origin: top right;
   z-index: 4;
 }
 
-.navbar .active{
+.navbar.active{
   visibility: visible;
   opacity: 1;
-  scale: 1; 
+  scale: 1;
 }
 
 .navbar,
@@ -394,7 +394,7 @@ body {
   padding-block-start: 14px;
 }
 
-:is(.navbar-link, .btn-link):is(:hover, :focous-visible), 
+:is(.navbar-link, .btn-link):is(:hover, :focous-visible),
 .navbar-link .active{
   color: var(--primary-100);
 }
