@@ -430,7 +430,18 @@ body {
         box-shadow: var(--shadow-4);
       }
 
-      
+      .search-item{
+        position: relative;
+        color: var(--neutral-50);
+      }
+
+      .search-item .search-item-field{
+        height: 76px;
+        padding: 40px, 16px, 12px;
+        border-radius: var(--radius-large);
+        transition: var(--transition-duration-quick) var(--transition-easing-quick);
+        cursor: pointer;
+      }
 
       /* PROPERTY */
 
