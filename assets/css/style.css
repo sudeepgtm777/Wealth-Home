@@ -263,6 +263,12 @@ body {
   overflow: hidden;
 }
 
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* COMPONENT */
 
 /* Button */
@@ -329,6 +335,20 @@ body {
 
 .icon-btn:where(:hover, :focous-visible) {
   background-color: var(--neutral-90);
+}
+
+/*
+  Badge
+ */
+.badge {
+  height: 32px;
+  max-width: max-content;
+  display: grid;
+  place-items: center;
+  padding-inline: 16px;
+  background-color: var(--secondary-100);
+  border-radius: var(--radius-small);
+  box-shadow: var(--shadow-3);
 }
 
 /* HEADER */
