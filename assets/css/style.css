@@ -351,6 +351,34 @@ body {
   box-shadow: var(--shadow-3);
 }
 
+/*
+  Card
+*/
+
+.card {
+  border-radius: var(--radius-large);
+  overflow: hidden;
+  box-shadow: var(--shadow-2);
+  transistion: var(--transition-duration-quick) var(--transition-easing-quick);
+}
+
+.card:where(:hover, :focus-within) {
+  box-shadow: var(--shadow-4);
+}
+
+.card-banner {
+  position: relative;
+}
+
+.card-banner .img-cover {
+  transistion: var(--transition-duration-smooth) var(--transition-easing-quick);
+}
+
+.card:where(:hover, :focus-within) .img-cover {
+  scale: 1.05;
+  rotate: 1deg;
+}
+
 /* HEADER */
 
 .header {
