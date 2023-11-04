@@ -748,6 +748,19 @@ body {
   display: flex;
 }
 
+.avatar {
+  position: relative;
+  width: 60px;
+  height: 46px;
+  border-radius: var(--radius-full);
+  border: 3px solid var(--neutral-98);
+  overflow: hidden;
+}
+
+.avatar:not(:first-child) {
+  margin-inline-start: -10px;
+}
+
 /* FOOTER */
 
 /* MEDIA QUERIES */
