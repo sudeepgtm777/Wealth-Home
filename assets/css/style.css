@@ -736,6 +736,18 @@ body {
 
 /* STORY */
 
+.story .section-subtitle {
+  color: var(--primary-100);
+}
+
+.story .section-title {
+  margin-block: 12px;
+}
+
+.avatar-list {
+  display: flex;
+}
+
 /* FOOTER */
 
 /* MEDIA QUERIES */
