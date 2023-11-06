@@ -11,7 +11,7 @@ $navToggler.addEventListener('click', () => $navbar.classList.toggle('active'));
 
 const $header = document.querySelector('[data-header]');
 
-window.addEventListener('scroll', e => {
+window.addEventListener('scroll', (e) => {
   $header.classList[window.scrollY > 50 ? 'add' : 'remove']('active');
 });
 
@@ -19,7 +19,7 @@ window.addEventListener('scroll', e => {
 
 const $toggleBtns = document.querySelectorAll('[data-toggle-btn]');
 
-$toggleBtns.forEach($toggleBtns => {
+$toggleBtns.forEach(($toggleBtns) => {
   $toggleBtns.addEventListener('click', () => {
     $toggleBtns.classList.toggle('active');
   });
