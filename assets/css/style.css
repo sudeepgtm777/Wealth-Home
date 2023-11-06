@@ -701,8 +701,7 @@ body {
 .video-card {
   height: 260px;
   border-radius: 32px;
-  background: linear-gradient(0deg, #0000004d, #0000004d),
-    url('../images/video-card.jpg');
+  background: linear-gradient(0deg, #0000004d, #0000004d), url('../images/video-card.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
@@ -759,6 +758,57 @@ body {
 
 .avatar:not(:first-child) {
   margin-inline-start: -10px;
+}
+
+.avatar .overlay-content {
+  position: absolute;
+  inset: 0;
+  display: gird;
+  place-items: center;
+  background-color: #00000BF;
+  color: var(--neutral-100);
+}
+
+.story .title-wrapper {
+  display: gird;
+  gap: 16px;
+}
+
+.story-list {
+  display: gird;
+  gap: 16px;
+}
+
+.story-card {
+  position: relative;
+  height: 360px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--radius-large);
+  overflow: hidden;
+  transition: var(--transition-duration-quick) var(--transition-easing-quick);
+}
+
+.story-card:where(:hover, :focus-visible) {
+  scale: 0.99;
+}
+
+.story-card .overlay-content {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #00000000 33.33%, #000000cc 100%);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 24px;
+}
+
+.story-card .rating-wrapper {
+  display: flex;
+  align-items: center;
+  margin-block-start: 8px;
 }
 
 /* FOOTER */
