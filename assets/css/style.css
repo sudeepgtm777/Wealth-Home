@@ -846,4 +846,21 @@ body {
   margin-block: 16px;
 }
 
+.footer-list-title {
+  margin-block-end: 16px;
+}
+
+.footer-list {
+  display: grid;
+  gap: 16px;
+}
+
+.footer-link {
+  transistion: var(--transition-duration-quick) var(--transition-easing-quick);
+}
+
+.footer-link:where(:hover, :focus-visible) {
+  color: var(--primary-100);
+}
+
 /* MEDIA QUERIES */
