@@ -831,4 +831,19 @@ body {
 
 /* FOOTER */
 
+.footer {
+  background-color: var(--primary-20);
+  color: var(--neutral-90);
+}
+
+.footer-top .container {
+  padding-block: 60px;
+  display: grid;
+  gap: 24px;
+}
+
+.footer-text {
+  margin-block: 16px;
+}
+
 /* MEDIA QUERIES */
