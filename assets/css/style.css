@@ -883,5 +883,10 @@ body {
     --fs-headline-large: 5.2rem;
     --fs-headline-medium: 4rem;
     --fs-headline-small: 3.6rem;
+
+    /* Line height */
+    --lh-headline-large: 64px;
+    --lh-headline-medium: 64px;
+    --lh-headline-small: 64px;
   }
 }
