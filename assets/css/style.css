@@ -864,3 +864,24 @@ body {
 }
 
 /* MEDIA QUERIES */
+
+/*
+* responsive for large screen than 768px
+*/
+
+@media (min-width: 768px) {
+  /*
+* Custom property
+*/
+
+  :root {
+    /*
+* Typography
+*/
+
+    /* Font size */
+    --fs-headline-large: 5.2rem;
+    --fs-headline-medium: 4rem;
+    --fs-headline-small: 3.6rem;
+  }
+}
