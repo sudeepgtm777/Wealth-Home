@@ -910,4 +910,17 @@ body {
     gap: 40px;
     margin-block-end: 48px;
   }
+
+  /**
+  * Hero
+  */
+
+  .hero {
+    padding-block: 160px 100px;
+  }
+
+  .search-bar {
+    grid-template-columns: 160px 160px 1fr max-content;
+    gap: 0;
+  }
 }
