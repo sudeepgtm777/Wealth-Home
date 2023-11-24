@@ -865,19 +865,19 @@ body {
 
 /* MEDIA QUERIES */
 
-/*
+/**
 * responsive for large screen than 768px
 */
 
 @media (min-width: 768px) {
-  /*
-* Custom property
-*/
+  /**
+  * Custom property
+  */
 
   :root {
-    /*
-* Typography
-*/
+    /**
+    * Typography
+    */
 
     /* Font size */
     --fs-headline-large: 5.2rem;
@@ -889,4 +889,8 @@ body {
     --lh-headline-medium: 64px;
     --lh-headline-small: 64px;
   }
+
+  /**
+  * Reused style
+  */
 }
