@@ -923,4 +923,14 @@ body {
     grid-template-columns: 160px 160px 1fr max-content;
     gap: 0;
   }
+
+  .search-item: not(:last-of-type)::after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 100%;
+    bottom: 16px;
+    width: 1px;
+    background-color: var(--neutral-90);
+  }
 }
