@@ -933,4 +933,21 @@ body {
     width: 1px;
     background-color: var(--neutral-90);
   }
+
+  .search-btn {
+    height: 100%;
+    margin-inline-start: 8px;
+  }
+
+  /**
+  * Property
+  */
+
+  .property {
+    padding-block-start: 80px;
+  }
+
+  .property .section-text {
+    margin-block-end: 0;
+  }
 }
