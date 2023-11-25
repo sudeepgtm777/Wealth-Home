@@ -968,4 +968,21 @@ body {
     gird-template-columns: 1fr 1fr;
     gap: 16px;
   }
+
+  /**
+  * Video
+  */
+
+  .video-card {
+    height: 400px;
+  }
+
+  .play-btn {
+    width: 96px;
+    height: 96ox;
+  }
+
+  .play-btn .material-symbols-rounded {
+    font-size: 4.8rem;
+  }
 }
