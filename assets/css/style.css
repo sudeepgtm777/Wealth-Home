@@ -1003,4 +1003,21 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  /**
+  * Footer
+  */
+
+  .footer-top .container {
+    padding-block: 80px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-brand {
+    gird-columns: 1/4;
+  }
+
+  .footer-text {
+    max-width: 400px;
+  }
 }
