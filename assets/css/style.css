@@ -985,4 +985,21 @@ body {
   .play-btn .material-symbols-rounded {
     font-size: 4.8rem;
   }
+
+  /**
+  * Story
+  */
+
+  .story .section-title {
+    margin-block: 16px;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 60px;
+  }
+
+  .story-list {
+    gird-template-columns: 1fr 1fr;
+  }
 }
