@@ -950,4 +950,22 @@ body {
   .property .section-text {
     margin-block-end: 0;
   }
+
+  /**
+  * Feature
+  */
+
+  .feature-content {
+    padding-block-start: 32px;
+  }
+
+  .feature-content .feature-text {
+    margin-block: 16px 24px;
+    line-height: 28px;
+  }
+
+  .feature-list {
+    gird-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
 }
