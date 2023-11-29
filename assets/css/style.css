@@ -1050,4 +1050,35 @@ body {
   .container {
     max-width: 950px;
   }
+
+  /**
+  * Header
+  */
+
+  .nav-toggle-btn {
+    display: none;
+  }
+
+  .navbar,
+  .navbar-list,
+  .navbar-wrapper {
+    all: unset;
+    display: flex;
+    align-itmes: center;
+  }
+
+  .navbar,
+  .navbar-list {
+    flex-grow: 1;
+  }
+
+  .navbar-list {
+    justify-content: center;
+  }
+
+  .navbar-link,
+  .btn-link {
+    color: var(--neutral-80);
+    line-height: 48px;
+  }
 }
