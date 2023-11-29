@@ -1120,4 +1120,23 @@ body {
   .navbar-wrapper {
     gap: 24px;
   }
+
+  /**
+  * Hero
+  */
+
+  .hero .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+  }
+
+  .hero-content {
+    grid-columns: 1 / 7;
+  }
+
+  .search-bar {
+    min-width: max-content;
+    grid-template-columns: 160px 220px 1fr max-content;
+  }
 }
