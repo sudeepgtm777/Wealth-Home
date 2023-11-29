@@ -1172,4 +1172,30 @@ body {
   .property .section-text {
     max-width: 640 px;
   }
+
+  /**
+  * Feature
+  */
+
+  .feature .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .feature-content {
+    padding: 40px;
+  }
+
+  .feature-list {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-banner {
+    aspect-ratio: auto;
+  }
+
+  .feature-2 .feature-banner {
+    order: 1;
+  }
 }
