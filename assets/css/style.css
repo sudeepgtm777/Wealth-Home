@@ -1032,7 +1032,7 @@ body {
   */
 
   :root {
-    /*
+    /**
        * Typography
       */
 
@@ -1041,5 +1041,13 @@ body {
 
     /* line-height */
     -lh-body-large: 32px;
+  }
+
+  /**
+  * Reused Style
+  */
+
+  .container {
+    max-width: 950px;
   }
 }
