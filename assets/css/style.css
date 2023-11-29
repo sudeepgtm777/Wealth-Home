@@ -1021,3 +1021,22 @@ body {
     max-width: 400px;
   }
 }
+
+/**
+* responsive for large screen than 992px
+*/
+
+@media (min-width: 992px) {
+  /**
+  * Custom property
+  */
+
+  :root {
+    /*
+       * Typography
+      */
+
+    /* font size */
+    --fs-body-large: 1.8rem;
+  }
+}
