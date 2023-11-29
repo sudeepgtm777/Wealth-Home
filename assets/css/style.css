@@ -1164,4 +1164,12 @@ body {
     max-width: 720px;
     z-index: -1;
   }
+
+  /**
+  * Property
+  */
+
+  .property .section-text {
+    max-width: 640 px;
+  }
 }
