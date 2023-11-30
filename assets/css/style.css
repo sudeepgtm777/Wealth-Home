@@ -1199,3 +1199,27 @@ body {
     order: 1;
   }
 }
+
+/**
+* responsive for large screen than 1440px
+*/
+
+@media (min-width: 1440px) {
+  /**
+  * Custom property
+  */
+
+  :root {
+    /**
+       * Typography
+      */
+
+    /* font size */
+    --fs-headline-large: 7.2rem;
+    --fs-headline-medium: 5.4rem;
+
+    /* line-height */
+    -lh-headline-large: 92px;
+    -lh-headline-medium: 72px;
+  }
+}
